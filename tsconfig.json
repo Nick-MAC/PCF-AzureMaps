@@ -1,0 +1,8 @@
+{
+    "extends": "./node_modules/pcf-scripts/tsconfig_base.json",
+    "compilerOptions": {
+        "typeRoots": ["node_modules/@types"]
+    },
+    "include": ["mapPCF/**/*.ts", "mapPCF/**/*.tsx"],
+    "exclude": ["z_devFiles/**", "PCF_AzureMaps/**", "node_modules/**"]
+}

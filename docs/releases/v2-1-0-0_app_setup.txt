@@ -1,0 +1,38 @@
+PCF-AzureMaps v2.1.0.0 - App Setup Checklist
+============================================
+(Solution 2.1.0.0 / control 2.1.0)
+
+WHAT THIS IS
+  Solution PCF_AzureMaps, publisher NickMacLabs (prefix nmlabs). The control's
+  name in Power Apps is nmlabs_azuremaps.mapPCF and it appears in Studio as
+  PCF_AzureMaps. See the README for features, properties and setup.
+
+FIRST INSTALL, OR UPGRADE FROM AN EARLIER BUILD OF PCF_AzureMaps
+  1. Maker portal > Solutions > Import solution > PCF_AzureMaps_2-1-0-0.zip
+     (an upgrade over any installed PCF_AzureMaps version).
+  2. Open each app in the designer and accept the prompt to update the code
+     component. Save and publish when done.
+
+IF YOU USED THE EARLIER SOLUTION (unique name AzureMapPCF)
+  This is a NEW component, not an upgrade: the publisher, prefix and control
+  name all changed. Apps that use the old control keep working until you
+  replace the control in them.
+
+  STEP 1 - IMPORT SIDE BY SIDE
+    Import PCF_AzureMaps_2-1-0-0.zip as above. Do NOT uninstall the old
+    solution yet. The two solutions install next to each other.
+
+  STEP 2 - MOVE EACH APP TO THE NEW CONTROL (try it in a copy first)
+    For every map in every app:
+    1. Insert > Get more components > Code, and add PCF_AzureMaps.
+    2. Insert the control. Re-enter the dataset (Items) and its column
+       mappings, every property you had set (auth URL, map domain, hide
+       options, lookup bindings and so on) and the OnChange formula.
+       Properties and formulas do not carry over from the old control.
+    3. Update formulas that refer to the old control by name, or give the new
+       control the old control's name after deleting the old one.
+    4. Delete the old control, save and publish.
+
+  STEP 3 - REMOVE THE OLD SOLUTION
+    After every app is moved and tested, uninstall the old solution (unique
+    name AzureMapPCF). Uninstalling it earlier breaks apps that still use it.

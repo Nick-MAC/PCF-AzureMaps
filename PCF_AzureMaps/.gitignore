@@ -1,0 +1,13 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# keep intermediate build state out of source control
+/obj
+
+# ignore all bin outputs except release zip artifacts
+/bin/*
+!/bin/Release/
+/bin/Release/*
+!/bin/Release/*.zip
+
+# MSBuild Binary and Structured Log
+*.binlog

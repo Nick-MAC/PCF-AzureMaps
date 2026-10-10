@@ -1,0 +1,36 @@
+{
+  "name": "pcf-azuremaps",
+  "version": "1.0.0",
+  "description": "Azure Maps control for Power Apps canvas apps (PowerApps Component Framework).",
+  "scripts": {
+    "build": "node ./node_modules/pcf-scripts/bin/pcf-scripts.js build",
+    "clean": "node ./node_modules/pcf-scripts/bin/pcf-scripts.js clean",
+    "lint": "node ./node_modules/pcf-scripts/bin/pcf-scripts.js lint",
+    "lint:fix": "node ./node_modules/pcf-scripts/bin/pcf-scripts.js lint fix",
+    "rebuild": "node ./node_modules/pcf-scripts/bin/pcf-scripts.js rebuild",
+    "start": "node ./node_modules/pcf-scripts/bin/pcf-scripts.js start",
+    "start:watch": "node ./node_modules/pcf-scripts/bin/pcf-scripts.js start watch",
+    "refreshTypes": "node ./node_modules/pcf-scripts/bin/pcf-scripts.js refreshTypes"
+  },
+  "dependencies": {
+    "@fluentui/react-components": "9.46.2",
+    "azure-maps-control": "^3.7.2",
+    "react": "16.14.0",
+    "react-dom": "16.14.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.25.1",
+    "@microsoft/eslint-plugin-power-apps": "^0.2.51",
+    "@types/powerapps-component-framework": "^1.3.16",
+    "@types/react": "^16.14.60",
+    "@types/react-dom": "^16.9.24",
+    "eslint-plugin-promise": "^7.1.0",
+    "eslint-plugin-react": "^7.37.2",
+    "globals": "^15.15.0",
+    "pcf-scripts": "^1",
+    "pcf-start": "^1",
+    "react": "^16.14.0",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "8.44.0"
+  }
+}
